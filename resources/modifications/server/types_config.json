@@ -1,0 +1,94 @@
+[
+  {
+    "description": "make tents tier 4",
+    "action": "modify",
+    "matching": [
+      {
+        "name": ".*Tent"
+      }
+    ],
+    "modification": {
+      "value": [
+        {
+          "name": "Tier4"
+        }
+      ]
+    }
+  },
+  {
+    "description": "lower all clothes spawn rates",
+    "action": "modify",
+    "matching": [
+      {
+        "category": {
+          "name": "clothes"
+        }
+      }
+    ],
+    "modification": {
+      "nominal": 3,
+      "min": 2
+    }
+  },
+  {
+    "description": "increase battery9v rate",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "Battery9V"
+      }
+    ],
+    "modification": {
+      "nominal": 200,
+      "min": 140,
+      "usage": [
+        {
+          "name": "Industrial"
+        },
+        {
+          "name": "Village"
+        },
+        {
+          "name": "Town"
+        },
+        {
+          "name": "Farm"
+        }
+      ]
+    }
+  },
+  {
+    "description": "lower pot spawn rate",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "^Pot$"
+      }
+    ],
+    "modification": {
+      "nominal": 30,
+      "min": 20
+    }
+  },
+  {
+    "description": "remove items that shouldn't spawn",
+    "action": "remove",
+    "matching": [
+      {
+        "name": ".*(GiftBox|GreatHelm|Ghillie|Santas|Paper|Zippo|PumpkinHelmet|TruckBattery).*"
+      }
+    ]
+  },
+  {
+    "description": "Set lifetime for vehicles",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(CivilianSedan|OffroadHatchback|Hatchback_02|Sedan_02)(?!.*(Door|Hood|Trunk|Wheel)).*"
+      }
+    ],
+    "modification": {
+      "lifetime": 3888000
+    }
+  }
+]

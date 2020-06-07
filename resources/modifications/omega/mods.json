@@ -1,0 +1,20 @@
+[
+  {
+    "directory": "@CF",
+    "disable_updates": false,
+    "file_id": 1559212036,
+    "server_side": false
+  },
+  {
+    "directory": "@CFDZPlugin",
+    "disable_updates": false,
+    "file_id": 1874598419,
+    "server_side": true
+  },
+  {
+    "directory": "@Carim",
+    "disable_updates": false,
+    "file_id": 2123003098,
+    "server_side": false
+  }
+]
